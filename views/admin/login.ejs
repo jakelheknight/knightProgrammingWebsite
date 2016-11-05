@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <% include ../templates/head %>
+    </head>
+    <body>
+      <header id="box" class="container-fixed">
+      <div class="row">
+          <div class="col-sm-12">
+              <nav class="navbar navbar-fixed-top navbar-inverse">
+                  <div class="container">
+                      <div class="navbar-header">
+                          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                              <span class="sr-only">Toggle navigation</span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                          </button>
+                          <a class="navbar-brand" href="/"><img src="/images/KnightLogoXS.gif" alt="Knight Programming Logo"></a>
+                      </div>
+                      <!-- Collect the nav links, forms, and other content for toggling -->
+                      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                          <ul class="nav navbar-nav">
+                              <li><a href="/about/">About Us</a></li>
+                              <li class="dropdown">
+                                  <a href="/projects/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects<span class="caret"></span></a>
+                                  <ul class="dropdown-menu">
+                                      <li><a href="/projects/#ToDoTracker">ToDo Tracker</a></li>
+                                      <li><a href="/projects/#DragonQuest">Dragon Quest</a></li>
+                                  </ul>
+                              </li>
+                              <li><a href="/people/">People</a></li>
+                          </ul>
+                          <ul class="nav navbar-nav navbar-right">
+                              <li><a href="#" data-toggle="modal" data-target=".modalContact"> Contact</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </nav>
+          </div>
+      </div>
+      <div class="modal fade modalContact" tabindex="-1" role="dialog" aria-labelledby="Contact Me">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="col-xs-1">
+              </div>
+              <div class="col-xs-10">
+              <form method="post" action="#">
+                  <div class="form-group">
+                      <br>
+                      <input type="text" class="form-control" id="ContactName" aria-describedby="nameHelp" placeholder="Enter Full Name">
+                      <br>
+                      <input type="email" class="form-control" id="ContactEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                      <br>
+                      <input type="Subject" class="form-control" id="Subject" area-describedby="subject" placeholder="Subject">
+                      <br>
+                      <textarea class="form-control" rows="25" id="message">Enter Message</textarea>
+                      <br>
+                      <button class="btn btn-primary" type="submit" name="submit">Send</button>
+                  </div>
+              </form>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div id="Title" class="row">
+          <div class="col-xs-12">
+              <h1>Knight Programming</h1>
+              <h2>User Login</h2>
+              <br><br><br>
+              <form class="form-inline">
+              <div class="form-group">
+                <label class="sr-only" for="exampleInputEmail3">User Name</label>
+                <input type="email" class="form-control" id="exampleInputEmail3" placeholder="User Name">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+              </div>
+              <button type="submit" class="btn btn-default">Sign in</button>
+            </form>
+          </div>
+      </div>
+    </header>
+
+
+
+
+      <footer id="FootNav" class="container-float">
+          <% include ../templates/footer %>
+      </footer>
+  </body>
+  </html>

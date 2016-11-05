@@ -1,0 +1,154 @@
+body {
+    background-color: gainsboro;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-image: linear-gradient(to left bottom, #273961 0, #000 100%);
+    border-radius: 0;
+    width: 100%;
+}
+
+.wide{
+    width:100%;
+}
+
+.center{
+    margin: 0 auto;
+}
+
+.navbar img {
+    position: relative;
+    left: -15px;
+    top: -17px;
+}
+
+#down {
+    padding-top: 65vh;
+    font-size: 5vh;
+}
+
+#down a {
+    color: #92897d;
+}
+
+#footN a {
+	color: aliceblue;
+
+}
+
+#footN td, #footN th{
+	border: none;
+	text-align: center;
+}
+
+.navbar a {
+    color: #92897d;
+}
+
+footer {
+    padding-top: 10px;
+}
+
+#contact{
+    margin: auto;
+    background-color: #273961;
+}
+
+#box {
+    background-color: #222939;
+    width: 100%;
+}
+
+#Title {
+    font-family: 'Playfair Display SC', serif;
+    text-align: center;
+    color: #92897d;
+    height: 100vh;
+    padding-top: 10vh;
+}
+
+#Title h1 {
+    font-size: 6vmax;
+}
+
+#Title h2 {
+    font-size: 3vmax;
+}
+
+#Title h3 {
+    font-size: 2.2vmax;
+}
+#Main {
+    padding-top:50px;
+    font-size: 15px;
+    background-color: gainsboro;
+    min-height: 100vh;
+    color: #333;
+}
+
+
+#Main h1{
+    padding: 2vw 0;
+}
+#Main h1, #Main h2, #Main h3{
+    text-align: center;
+}
+
+#Main p {
+    text-align: justify;
+}
+
+#DQrul{
+    margin: 0 auto;
+    width:50%;
+}
+
+#CSBreakdown, #DataBase{
+    width:100%;
+}
+
+iframe {
+    width:100%;
+    height: 90vh;
+    margin: 20px 0 20px 0;
+}
+
+.item img {
+    width: 100%;
+}
+
+#Nav {
+    background-color: black;
+    color: white;
+}
+
+#FootNav {
+    min-height: 30vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: gainsboro;
+    font-size: 1.5vw;
+    padding: 2vw;
+}
+
+#FootNav table{
+    margin-top: 5%;
+    visibility: hidden;
+}
+
+#FootNav img {
+    display:block;
+    margin: auto;
+}
+
+@media screen and (min-width: 922px) {
+    #Title {
+        margin-top: 7vw;
+        text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+    }
+
+    #FootNav table{
+        visibility: visible;
+    }
+}
